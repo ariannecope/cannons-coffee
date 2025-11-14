@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+:root {
+  --black: 000000;
+  --white: #ffffff;
+  --catalina: #06327d;
+  --bluetiful: #2b70e4;
+  --vegan: #209d5c;
+  --sunglow: #ffd034;
+  --lightblue: #cadbf8;
+}
+
+img {
+  max-width: 100%;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body {
+  font-family: Poppins;
+  font-size: 1.125rem;
+  color: var(--black);
+  background-color: var(--catalina);
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: white;
+  border-bottom: 5px solid #ffd034;
+  border-top: 5px solid #ffd034;
+}
+
+header {
+  color: white;
+  text-transform: uppercase;
+  font-weight: normal;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 2rem;
+  text-align: center;
+  justify-content: center;
+  align-items: flex-end;}
+
+  header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    /* flex box property to get these side by side */
+  }
+  h1 {
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 1.667;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: left;
+  }
+  .grid-title {
+    background-color: var(--lightblue);
+    padding: 4rem 1rem 1rem;
+  }
+  h2 {
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: 1.6667;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 1.75rem;
+    line-height: 1.6667;
+    font-weight: 300;
+  }
+
+  .title {
+    font-size: 1.75rem;
+    text-align: left;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 1rem;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  nav a {
+    text-transform: uppercase;
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    padding: 1rem;
+  }
+  .large-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .large-card img {
+    margin: auto;
+  }
+  .large-card div {
+    align-self: center;
+  }
+  .button {
+    display: inline-block;
+    background-color: var(--vegan);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  .button:hover {
+    background-color: var(--sunglow);
+    color: var(--catalina);
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    color: var(--white);
+  }
+
+  @media (min-width: 1086px) {
+
+  header {
+    justify-content: space-between;
+    align-items: flex-end;
+  }}
