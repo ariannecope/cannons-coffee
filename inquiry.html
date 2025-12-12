@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/latte.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <header>
+        <div>
+          <img
+            src="images/cannons-coffee-logo.webp"
+            alt="Cannons Coffee, Beans of Joy! Est. 2014"
+          />
+          <h1>Cannons Coffee</h1>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="latte.html">COFFEE</a></li>
+            <li><a href="inquiry.html">INQUIRY</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            <li>
+              <a href="https://www.keenbeancoffee.com/" target="_blank"
+                >ABOUT</a
+              >
+            </li>
+            <li><a href="mailto:ariannecope@gmail.com">CONTACT</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main><form id="form">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+        <label for="phone">Phone:</label><br /><input
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="(555)555-5555"
+          required
+        /><br /><br />
+        <label for="comments">Comments:</label><br />
+        <textarea id="comments" name="comments" rows="3" cols="30"></textarea
+        ><br /><br />
+        <label for="coffeeflavors">Favorite Coffee Flavor:</label><br />
+        <select id="coffeeflavors" name="coffeeflavors">
+          <option value="">Select coffee Flavor</option>
+          <option value="honeylavendar">Honey Lavendar</option>
+          <option value="saltedcaramel">Salted Caramel</option>
+          <option value="peppermintmocha">Peppermint Mocha</option>
+          <option value="pumkinspice">Pumpkin Spice</option>
+          <option value="hazelnut">Hazelnut</option></select
+        ><br /><br />
+        <h2>Are you interested in ...</h2>
+        <div class="radio">
+          <input type="radio" name="choose" id="coffee" value="coffee" />
+          <label for="coffee">Buying Coffee</label>
+        </div>
+        <div class="radio">
+          <input
+            type="radio"
+            name="choose"
+            id="employment"
+            value="employment"
+          />
+          <label for="employment">Seeking Employment</label>
+        </div>
+            <button type="submit">Submit</button>
+</form>
+<div class="container"></div>
+      </main>
+      <footer>
+        <img
+          src="images/logo-footer.webp"
+          alt="cannons coffee, Beans of Joy! Est. 2014"
+        />
+        <p>&copy;2024 Cannons Coffee. All Rights Reserved</p>
+      </footer>
+    </div>
+    <script src="js/custom-inquiry.js"></script>
+  </body>
+</html>
